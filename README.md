@@ -25,3 +25,37 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+https://developers.google.com/codelabs/building-a-web-app-with-angular-and-firebase#0 from October 10, 2023.
+
+ ng new angular-firebase-kanban --no-strict --no-standalone --routing=false --style=css
+ , Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)? No, open folder, see: no app.routes.ts, no app.config.ts, no app.config.server.ts ,
+
+ "1. Introduction
+ 2. Creating a new project
+ 3. Adding Material and the CDK
+ 4. Visualizing tasks
+ 5. Implementing drag and drop for tasks
+ 6. Creating new tasks
+ 7. Improving the app's styles
+ 8. Editing and deleting existing tasks
+ 9. Creating a new Firebase project
+ 10. Adding Firebase to the prject
+ 11. Moving the data to Firestore
+ 12. Improving optimistic updates
+ 13. Deploying the application
+ 14. Congratulations"
+
+ ng add @angular/material, theme= indigo-pink,
+ app.component.html: add a toolbar,
+app.module.ts: import MatToolbarModule and
+    MatIconModule, import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon'; , 
+ng s -o to see the Kanban Fire toolbar in browser, 
+Step2. ng g c task --skip-tests, then make task.ts file: export interface,
+task.component.ts: input, output, eventemitter, edit, import Task from task.ts, task.component.html: ngIf, string interpolation, edit, emit,
+app.module.ts: import MatCardModule, 
+app.component.ts: define an array and add tasks, import Tasks, app.component.html: use ngFor, look at page in browser,
+
+
+
