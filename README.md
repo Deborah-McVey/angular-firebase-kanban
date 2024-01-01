@@ -56,6 +56,13 @@ Step2. ng g c task --skip-tests, then make task.ts file: export interface,
 task.component.ts: input, output, eventemitter, edit, import Task from task.ts, task.component.html: ngIf, string interpolation, edit, emit,
 app.module.ts: import MatCardModule, 
 app.component.ts: define an array and add tasks, import Tasks, app.component.html: use ngFor, look at page in browser,
-
-
+5. implementing drag and drop: 
+app.component.html: remove ngFor and add 3 swimlanes, app.module.ts: import DragDropModule, app.component.ts: declare inProgress, done, editTask, drop methods,
+import { CdkDragDrop, transferArrayItem } from '@angular/cdk/drag-drop';
+ng s -o to see if results look right,
+6. creating new tasks: app.component.html: add button between toolbar and swimlanes div, app.module.ts: import { MatButtonModule } from '@angular/material/button'; , app.component.ts: import { MatDialog } from '@angular/material/dialog'; , app.module.ts: import { MatDialogModule } from '@angular/material/dialog'; , now: ng g c task-dialog --skip-tests, task-dialog.component.html: modal content, task-dialog.component.ts: inject, matdialogdata, matdialogref, task, backuptask, cancel, task-dialog.component.ts: export interfaces taskdialogdata and taskdialogresult, 
+app.module.ts: import  MatInputModule,
+    FormsModule, app.component.ts: import taskdialogcomponent and taskdialogresult, ng s -o,
+    7. improve the app's styles (CSS): app.component.css,
+    task.component.css, 
 
