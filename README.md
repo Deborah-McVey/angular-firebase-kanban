@@ -65,4 +65,6 @@ app.module.ts: import  MatInputModule,
     FormsModule, app.component.ts: import taskdialogcomponent and taskdialogresult, ng s -o,
     7. improve the app's styles (CSS): app.component.css,
     task.component.css, 
+    8. editing and deleting existing tasks: task-dialog.component.html: add a delete button, app.component.ts: replace editTask, https://github.com/FirebaseExtended/codelab-kanban-fire/tree/editing-and-deleting-existing-tasks , 
+    
 

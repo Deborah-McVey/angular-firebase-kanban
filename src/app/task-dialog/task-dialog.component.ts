@@ -20,8 +20,8 @@ export class TaskDialogComponent {
     this.data.task.description = this.backupTask.description;
     this.dialogRef.close(this.data);
   }
-
 }
+
 export interface TaskDialogData {
   task: Partial<Task>;
   enableDelete: boolean;
